@@ -2,7 +2,7 @@
 #include "DxLib.h"
 #include "game.h"
 #include "SceneTitle.h"
-#include "EasyQuiz.h"
+#include "EasyQuiz1.h"
 
 namespace
 {
@@ -106,8 +106,8 @@ SceneBase* SceneSelect::update()
 			{
 			case 0: //EASY‚ğ‘I‘ğ’†‚Ìê‡
 
-				//EASY‚ÉˆÚ“®
-				return (new EasyQuiz);
+				//EASY‚ÉˆÚ“®(‚Ç‚Ì–â‘è‚É”ò‚Ô‚©‚Íƒ‰ƒ“ƒ_ƒ€)
+				return (new EasyQuiz1);
 				break;
 			case 1: //NORMAL‚ğ‘I‘ğ’†‚Ìê‡
 

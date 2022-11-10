@@ -31,6 +31,12 @@
     <Filter Include="ヘッダー ファイル\Quiz">
       <UniqueIdentifier>{a5a99c83-3df2-4104-a54a-99ecee931c57}</UniqueIdentifier>
     </Filter>
+    <Filter Include="ソース ファイル\Quiz\EasyQuiz">
+      <UniqueIdentifier>{7b767756-f461-4f30-8039-120377ded619}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\Quiz\EasyQuiz">
+      <UniqueIdentifier>{6158ef0a-40e1-48b7-831d-08531100325f}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -57,8 +63,8 @@
     <ClCompile Include="SceneSelect.cpp">
       <Filter>ソース ファイル\Scene</Filter>
     </ClCompile>
-    <ClCompile Include="EasyQuzi.cpp">
-      <Filter>ソース ファイル\Quiz</Filter>
+    <ClCompile Include="EasyQuiz1.cpp">
+      <Filter>ソース ファイル\Quiz\EasyQuiz</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -86,8 +92,8 @@
     <ClInclude Include="SceneSelect.h">
       <Filter>ヘッダー ファイル\Scene</Filter>
     </ClInclude>
-    <ClInclude Include="EasyQuiz.h">
-      <Filter>ヘッダー ファイル\Quiz</Filter>
+    <ClInclude Include="EasyQuiz1.h">
+      <Filter>ヘッダー ファイル\Quiz\EasyQuiz</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

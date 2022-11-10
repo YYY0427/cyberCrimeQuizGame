@@ -151,7 +151,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="EasyQuzi.cpp" />
+    <ClCompile Include="EasyQuiz1.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="SceneSelect.cpp" />
     <ClCompile Include="Scene\SceneBase.cpp" />
@@ -162,7 +162,7 @@
     <ClCompile Include="Util\Vec2.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="EasyQuiz.h" />
+    <ClInclude Include="EasyQuiz1.h" />
     <ClInclude Include="SceneSelect.h" />
     <ClInclude Include="Scene\SceneBase.h" />
     <ClInclude Include="Scene\SceneManager.h" />
