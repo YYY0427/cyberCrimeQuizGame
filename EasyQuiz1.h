@@ -17,9 +17,13 @@ public:
 	virtual void draw() override;
 private:
 
-	int m_problemNumHandle;				//第何問かの表示用のフォント
+	int		m_circleHandle;				//〇の表示用のフォント
 
-	int m_problemStatemenHandle;		//問題文表示用のフォント
+	int		m_crossHandle;				//×の表示用のフォント
+
+	int		m_problemNumHandle;			//第何問かの表示用のフォント
+
+	int		m_problemStatemenHandle;	//問題文表示用のフォント
 
 	int		m_nowSelect;				//どの項目を選択しているか
 
@@ -30,5 +34,9 @@ private:
 	bool	m_bugPreven;				//バグ防止用
 
 	int		m_waitFrame;				//バグ防止用
+
+	bool	m_answerDisplay;			//〇か×かの表示の判断
+
+	bool	m_selection;				//解答を選択したか
 };
 

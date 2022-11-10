@@ -5,22 +5,26 @@
 namespace
 {
 	//選択肢の数
-	constexpr int kMenuNum = 4;
+	constexpr int kMenuNum = 3;
 	//コントローラーの操作のインターバル
 	constexpr int kSelectInterval = 10;
 	//選択肢1の表示位置
 	constexpr int kLetterPosX = Game::kScreenWidth / 2 - 200;
-	constexpr int kLetterPosY = Game::kScreenHeight / 2 + 50;
+	constexpr int kLetterPosY = Game::kScreenHeight / 2 + 10;
 }
 
 EasyQuiz1::EasyQuiz1() :
+	m_crossHandle(-1),
+	m_circleHandle(-1),
 	m_problemNumHandle(-1),
 	m_problemStatemenHandle(-1),
 	m_selectInterval(0),
 	m_nowSelect(0),
 	m_selectPosY(),
 	m_waitFrame(0),
-	m_bugPreven(false)
+	m_bugPreven(false),
+	m_answerDisplay(false),
+	m_selection(false)
 {
 }
 
@@ -31,13 +35,18 @@ EasyQuiz1::~EasyQuiz1()
 
 void EasyQuiz1::init()
 {
+	m_circleHandle			= CreateFontToHandle(NULL, 30, 5);
+	m_crossHandle			= CreateFontToHandle(NULL, 30, 5);
 	m_problemNumHandle		= CreateFontToHandle(NULL, 30, 5);
 	m_problemStatemenHandle = CreateFontToHandle(NULL, 20, 5);
 
 	m_selectInterval = 0;
-	m_nowSelect = 0;
-	m_waitFrame = 30;
-	m_selectPosY = kLetterPosY;
+	m_nowSelect		 = 0;
+	m_waitFrame		 = 30;
+	m_selectPosY	 = kLetterPosY;
+	m_answerDisplay  = false;
+	m_selection		 = false;
+	m_bugPreven		 = false;
 }
 
 SceneBase* EasyQuiz1::update()
@@ -72,12 +81,6 @@ SceneBase* EasyQuiz1::update()
 		//■の位置を選択肢2の横に表示
 		m_selectPosY = kLetterPosY + 100;
 	}
-	//選択肢3を選択中の場合
-	else
-	{
-		//■の位置を選択肢3の横に表示
-		m_selectPosY = kLetterPosY + 150;
-	}
 
 	//インターバル処理
 	m_selectInterval--;
@@ -107,17 +110,26 @@ SceneBase* EasyQuiz1::update()
 		{
 			switch (m_nowSelect)
 			{
-			case 0: //選択肢0を選択した場合
+			case 0: //選択肢0を選択した場合(正解)
 
+				m_selection = true;
+
+				//〇を表示
+				m_answerDisplay = true;
 				break;
-			case 1: //選択肢1を選択した場合
+			case 1: //選択肢1を選択した場合(不正解)
 
+				m_selection = true;
+
+				//×を表示
+				m_answerDisplay = false;
 				break;
-			case 2:	//選択肢2を選択した場合
+			case 2:	//選択肢2を選択した場合(不正解)
 
-				break;
-			case 3: //選択肢3を選択した場合
+				m_selection = true;
 
+				//×を表示
+				m_answerDisplay = false;
 				break;
 			}
 
@@ -136,12 +148,26 @@ void EasyQuiz1::draw()
 	DrawStringToHandle(Game::kScreenWidth / 2 - 185, 140, "「通常、私用のデバイスを持ち歩くと...」", GetColor(255, 255, 255), m_problemStatemenHandle);
 
 	//選択肢の表示
-	DrawString(kLetterPosX, kLetterPosY, "仕事用のデバイスを使用するよりもリスクが高くなる", GetColor(255, 255, 255));
+	DrawString(kLetterPosX, kLetterPosY,"仕事用のデバイスを使用するよりもリスクが高くなる", GetColor(255, 255, 255));
 	DrawString(kLetterPosX, kLetterPosY + 50, "仕事用のデバイスを使用するのと同じくらいリスクがある", GetColor(255, 255, 255));
 	DrawString(kLetterPosX, kLetterPosY + 100, "仕事用のデバイスを使用するよりもリスクが低くなる", GetColor(255, 255, 255));
-	DrawString(kLetterPosX, kLetterPosY + 150, "西村", GetColor(255, 255, 255));
 
 	DrawString(kLetterPosX - 50, m_selectPosY, "■", GetColor(255, 255, 255));
+
+	//選択肢を解答した場合
+	if (m_selection)
+	{
+		if (m_answerDisplay)
+		{
+			//〇の表示
+			DrawStringToHandle(Game::kScreenWidth / 2 - 55, 10, "〇", GetColor(255, 0, 0), m_problemNumHandle);
+		}
+		else 
+		{
+			//×の表示
+			DrawStringToHandle(Game::kScreenWidth / 2 - 55, 10, "×", GetColor(30, 144, 255), m_problemNumHandle);
+		}
+	}
 }
 
 void EasyQuiz1::end()
