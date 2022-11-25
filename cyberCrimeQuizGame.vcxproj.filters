@@ -37,6 +37,12 @@
     <Filter Include="ヘッダー ファイル\Quiz\EasyQuiz">
       <UniqueIdentifier>{6158ef0a-40e1-48b7-831d-08531100325f}</UniqueIdentifier>
     </Filter>
+    <Filter Include="ヘッダー ファイル\Quiz\EasyQuiz\EasyQuiz1">
+      <UniqueIdentifier>{7b363028-c7b8-4139-96bc-e98a716cac37}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\Quiz\EasyQuiz\EasyQuiz1">
+      <UniqueIdentifier>{034b6a74-de3a-4bae-992c-efc95428c4d7}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -60,11 +66,17 @@
     <ClCompile Include="Scene\SceneTitle.cpp">
       <Filter>ソース ファイル\Scene</Filter>
     </ClCompile>
-    <ClCompile Include="SceneSelect.cpp">
+    <ClCompile Include="Scene\SceneSelect.cpp">
       <Filter>ソース ファイル\Scene</Filter>
     </ClCompile>
-    <ClCompile Include="EasyQuiz1.cpp">
-      <Filter>ソース ファイル\Quiz\EasyQuiz</Filter>
+    <ClCompile Include="EasyQuiz1\EasyQuiz1.cpp">
+      <Filter>ソース ファイル\Quiz\EasyQuiz\EasyQuiz1</Filter>
+    </ClCompile>
+    <ClCompile Include="EasyQuiz1\EasyQuiz1CorrectAnswer.cpp">
+      <Filter>ソース ファイル\Quiz\EasyQuiz\EasyQuiz1</Filter>
+    </ClCompile>
+    <ClCompile Include="EasyQuiz1\EasyQuiz1IncorrectAnswer.cpp">
+      <Filter>ソース ファイル\Quiz\EasyQuiz\EasyQuiz1</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -89,11 +101,17 @@
     <ClInclude Include="Scene\SceneTitle.h">
       <Filter>ヘッダー ファイル\Scene</Filter>
     </ClInclude>
-    <ClInclude Include="SceneSelect.h">
-      <Filter>ヘッダー ファイル\Scene</Filter>
+    <ClInclude Include="EasyQuiz1CorrectAnswer.h">
+      <Filter>ヘッダー ファイル\Quiz\EasyQuiz\EasyQuiz1</Filter>
     </ClInclude>
-    <ClInclude Include="EasyQuiz1.h">
-      <Filter>ヘッダー ファイル\Quiz\EasyQuiz</Filter>
+    <ClInclude Include="EasyQuiz1IncorrectAnswer.h">
+      <Filter>ヘッダー ファイル\Quiz\EasyQuiz\EasyQuiz1</Filter>
+    </ClInclude>
+    <ClInclude Include="EasyQuiz\EasyQuiz1.h">
+      <Filter>ヘッダー ファイル\Quiz\EasyQuiz\EasyQuiz1</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\SceneSelect.h">
+      <Filter>ヘッダー ファイル\Scene</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

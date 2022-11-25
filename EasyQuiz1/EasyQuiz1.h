@@ -15,11 +15,9 @@ public:
 	virtual SceneBase* update() override;
 
 	virtual void draw() override;
+
 private:
-
-	int		m_circleHandle;				//〇の表示用のフォント
-
-	int		m_crossHandle;				//×の表示用のフォント
+	int		m_choiceHandle;				//選択肢表示用のフォント
 
 	int		m_problemNumHandle;			//第何問かの表示用のフォント
 
@@ -29,14 +27,20 @@ private:
 
 	int		m_selectInterval;			//コントローラーの操作のインターバル
 
-	int		m_selectPosY;				//■の表示位置
+	int		m_selectPosY;				//■の表示位置X
+
+	int		m_selectPosX;				//■の表示位置Y
+
+	int		m_timeBoxPosX;				//箱の左上X座標
+
+	float	m_timeBoxPosX2;				//箱の右下X座標
 
 	bool	m_bugPreven;				//バグ防止用
 
 	int		m_waitFrame;				//バグ防止用
 
-	bool	m_answerDisplay;			//〇か×かの表示の判断
+	int		m_startTime;				//スタート時間の取得
 
-	bool	m_selection;				//解答を選択したか
+	int		m_nowTime;					//現在の時間の取得
 };
 

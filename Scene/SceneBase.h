@@ -15,6 +15,4 @@ public:
 
 	virtual void draw() {}
 
-	// ƒV[ƒ“I—¹
-	virtual bool isEnd() { return false; }
 };
