@@ -1,12 +1,11 @@
 #pragma once
-
 #include "SceneBase.h"
 
-class EasyQuiz1IncorrectAnswer : public SceneBase
+class EasyQuiz3IncorrectAnswer : public SceneBase
 {
 public:
-	EasyQuiz1IncorrectAnswer();
-	virtual ~EasyQuiz1IncorrectAnswer();
+	EasyQuiz3IncorrectAnswer();
+	virtual ~EasyQuiz3IncorrectAnswer();
 
 	virtual void init() override;
 

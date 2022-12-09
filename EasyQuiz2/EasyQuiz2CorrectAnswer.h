@@ -1,12 +1,11 @@
 #pragma once
-
 #include "SceneBase.h"
 
-class EasyQuiz1IncorrectAnswer : public SceneBase
+class EasyQuiz2CorrectAnswer : public SceneBase
 {
 public:
-	EasyQuiz1IncorrectAnswer();
-	virtual ~EasyQuiz1IncorrectAnswer();
+	EasyQuiz2CorrectAnswer();
+	virtual ~EasyQuiz2CorrectAnswer();
 
 	virtual void init() override;
 
@@ -18,7 +17,7 @@ public:
 
 private:
 
-	int		m_crossHandle;				//×の表示用のフォント
+	int		m_circleHandle;				//〇の表示用のフォント
 	int		m_letterHandle;				//文字表示用のフォント
 	int		m_waitFrame;				//バグ防止用
 	bool	m_bugPreven;				//バグ防止用

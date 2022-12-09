@@ -43,6 +43,18 @@
     <Filter Include="ソース ファイル\Quiz\EasyQuiz\EasyQuiz1">
       <UniqueIdentifier>{034b6a74-de3a-4bae-992c-efc95428c4d7}</UniqueIdentifier>
     </Filter>
+    <Filter Include="ソース ファイル\Quiz\EasyQuiz\EasyQuiz2">
+      <UniqueIdentifier>{a04944d3-88c1-4811-95b3-3ac53fad636a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\Quiz\EasyQuiz\EasyQuiz2">
+      <UniqueIdentifier>{71c6b50f-9cf3-46d2-89bc-15c1de22056c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\Quiz\EasyQuiz\EasyQuiz3">
+      <UniqueIdentifier>{ea29b451-853b-4737-b259-92db8c70ea96}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\Quiz\EasyQuiz\EasyQuiz3">
+      <UniqueIdentifier>{b0ebb0e0-674e-4d30-bf4e-3a59657f7f92}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -66,9 +78,6 @@
     <ClCompile Include="Scene\SceneTitle.cpp">
       <Filter>ソース ファイル\Scene</Filter>
     </ClCompile>
-    <ClCompile Include="Scene\SceneSelect.cpp">
-      <Filter>ソース ファイル\Scene</Filter>
-    </ClCompile>
     <ClCompile Include="EasyQuiz1\EasyQuiz1.cpp">
       <Filter>ソース ファイル\Quiz\EasyQuiz\EasyQuiz1</Filter>
     </ClCompile>
@@ -77,6 +86,27 @@
     </ClCompile>
     <ClCompile Include="EasyQuiz1\EasyQuiz1IncorrectAnswer.cpp">
       <Filter>ソース ファイル\Quiz\EasyQuiz\EasyQuiz1</Filter>
+    </ClCompile>
+    <ClCompile Include="EasyQuiz2\EasyQuiz2.cpp">
+      <Filter>ソース ファイル\Quiz\EasyQuiz\EasyQuiz2</Filter>
+    </ClCompile>
+    <ClCompile Include="EasyQuiz2\EasyQuiz2CorrectAnswer.cpp">
+      <Filter>ソース ファイル\Quiz\EasyQuiz\EasyQuiz2</Filter>
+    </ClCompile>
+    <ClCompile Include="EasyQuiz2\EasyQuiz2IncorrectAnswer.cpp">
+      <Filter>ソース ファイル\Quiz\EasyQuiz\EasyQuiz2</Filter>
+    </ClCompile>
+    <ClCompile Include="EasyQuiz3\EasyQuiz3.cpp">
+      <Filter>ソース ファイル\Quiz\EasyQuiz\EasyQuiz3</Filter>
+    </ClCompile>
+    <ClCompile Include="EasyQuiz3\EasyQuiz3CorrectAnswer.cpp">
+      <Filter>ソース ファイル\Quiz\EasyQuiz\EasyQuiz3</Filter>
+    </ClCompile>
+    <ClCompile Include="EasyQuiz3\EasyQuiz3IncorrectAnswer.cpp">
+      <Filter>ソース ファイル\Quiz\EasyQuiz\EasyQuiz3</Filter>
+    </ClCompile>
+    <ClCompile Include="EasyQuizSceneMain.cpp">
+      <Filter>ソース ファイル\Quiz\EasyQuiz</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -101,17 +131,35 @@
     <ClInclude Include="Scene\SceneTitle.h">
       <Filter>ヘッダー ファイル\Scene</Filter>
     </ClInclude>
-    <ClInclude Include="EasyQuiz1CorrectAnswer.h">
+    <ClInclude Include="EasyQuiz1\EasyQuiz1.h">
       <Filter>ヘッダー ファイル\Quiz\EasyQuiz\EasyQuiz1</Filter>
     </ClInclude>
-    <ClInclude Include="EasyQuiz1IncorrectAnswer.h">
+    <ClInclude Include="EasyQuiz1\EasyQuiz1CorrectAnswer.h">
       <Filter>ヘッダー ファイル\Quiz\EasyQuiz\EasyQuiz1</Filter>
     </ClInclude>
-    <ClInclude Include="EasyQuiz\EasyQuiz1.h">
+    <ClInclude Include="EasyQuiz1\EasyQuiz1IncorrectAnswer.h">
       <Filter>ヘッダー ファイル\Quiz\EasyQuiz\EasyQuiz1</Filter>
     </ClInclude>
-    <ClInclude Include="Scene\SceneSelect.h">
-      <Filter>ヘッダー ファイル\Scene</Filter>
+    <ClInclude Include="EasyQuiz2\EasyQuiz2.h">
+      <Filter>ヘッダー ファイル\Quiz\EasyQuiz\EasyQuiz2</Filter>
+    </ClInclude>
+    <ClInclude Include="EasyQuiz2\EasyQuiz2CorrectAnswer.h">
+      <Filter>ヘッダー ファイル\Quiz\EasyQuiz\EasyQuiz2</Filter>
+    </ClInclude>
+    <ClInclude Include="EasyQuiz2\EasyQuiz2IncorrectAnswer.h">
+      <Filter>ヘッダー ファイル\Quiz\EasyQuiz\EasyQuiz2</Filter>
+    </ClInclude>
+    <ClInclude Include="EasyQuiz3\EasyQuiz3.h">
+      <Filter>ヘッダー ファイル\Quiz\EasyQuiz\EasyQuiz3</Filter>
+    </ClInclude>
+    <ClInclude Include="EasyQuiz3\EasyQuiz3CorrectAnswer.h">
+      <Filter>ヘッダー ファイル\Quiz\EasyQuiz\EasyQuiz3</Filter>
+    </ClInclude>
+    <ClInclude Include="EasyQuiz3\EasyQuiz3IncorrectAnswer.h">
+      <Filter>ヘッダー ファイル\Quiz\EasyQuiz\EasyQuiz3</Filter>
+    </ClInclude>
+    <ClInclude Include="EasyQuizSceneMain.h">
+      <Filter>ヘッダー ファイル\Quiz\EasyQuiz</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

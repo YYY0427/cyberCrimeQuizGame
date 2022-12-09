@@ -122,7 +122,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>./プロジェクトに追加すべきファイル_VC用;$(ProjectDir)Util;$(ProjectDir);$(ProjectDir)Scene;$(ProjectDir)EasyQuiz1</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>./プロジェクトに追加すべきファイル_VC用;$(ProjectDir)Util;$(ProjectDir);$(ProjectDir)Scene;$(ProjectDir)EasyQuiz1;$(ProjectDir)EasyQuiz2;$(ProjectDir)EasyQuiz3</AdditionalIncludeDirectories>
       <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
     </ClCompile>
     <Link>
@@ -154,22 +154,34 @@
     <ClCompile Include="EasyQuiz1\EasyQuiz1.cpp" />
     <ClCompile Include="EasyQuiz1\EasyQuiz1CorrectAnswer.cpp" />
     <ClCompile Include="EasyQuiz1\EasyQuiz1IncorrectAnswer.cpp" />
+    <ClCompile Include="EasyQuiz2\EasyQuiz2.cpp" />
+    <ClCompile Include="EasyQuiz2\EasyQuiz2CorrectAnswer.cpp" />
+    <ClCompile Include="EasyQuiz2\EasyQuiz2IncorrectAnswer.cpp" />
+    <ClCompile Include="EasyQuiz3\EasyQuiz3.cpp" />
+    <ClCompile Include="EasyQuiz3\EasyQuiz3CorrectAnswer.cpp" />
+    <ClCompile Include="EasyQuiz3\EasyQuiz3IncorrectAnswer.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="EasyQuizSceneMain.cpp" />
     <ClCompile Include="Scene\SceneBase.cpp" />
     <ClCompile Include="Scene\SceneManager.cpp" />
-    <ClCompile Include="Scene\SceneSelect.cpp" />
     <ClCompile Include="Scene\SceneTitle.cpp" />
     <ClCompile Include="Util\Mouse.cpp" />
     <ClCompile Include="Util\Pad.cpp" />
     <ClCompile Include="Util\Vec2.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="EasyQuiz1CorrectAnswer.h" />
-    <ClInclude Include="EasyQuiz1IncorrectAnswer.h" />
-    <ClInclude Include="EasyQuiz\EasyQuiz1.h" />
+    <ClInclude Include="EasyQuiz1\EasyQuiz1.h" />
+    <ClInclude Include="EasyQuiz1\EasyQuiz1CorrectAnswer.h" />
+    <ClInclude Include="EasyQuiz1\EasyQuiz1IncorrectAnswer.h" />
+    <ClInclude Include="EasyQuiz2\EasyQuiz2.h" />
+    <ClInclude Include="EasyQuiz2\EasyQuiz2CorrectAnswer.h" />
+    <ClInclude Include="EasyQuiz2\EasyQuiz2IncorrectAnswer.h" />
+    <ClInclude Include="EasyQuiz3\EasyQuiz3.h" />
+    <ClInclude Include="EasyQuiz3\EasyQuiz3CorrectAnswer.h" />
+    <ClInclude Include="EasyQuiz3\EasyQuiz3IncorrectAnswer.h" />
+    <ClInclude Include="EasyQuizSceneMain.h" />
     <ClInclude Include="Scene\SceneBase.h" />
     <ClInclude Include="Scene\SceneManager.h" />
-    <ClInclude Include="Scene\SceneSelect.h" />
     <ClInclude Include="Scene\SceneTitle.h" />
     <ClInclude Include="Util\game.h" />
     <ClInclude Include="Util\Mouse.h" />

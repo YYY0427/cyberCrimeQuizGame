@@ -14,5 +14,4 @@ public:
 	virtual SceneBase* update() { return this; }
 
 	virtual void draw() {}
-
 };

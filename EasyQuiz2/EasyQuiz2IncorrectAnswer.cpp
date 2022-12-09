@@ -1,21 +1,21 @@
-#include "EasyQuiz1IncorrectAnswer.h"
+#include "EasyQuiz2IncorrectAnswer.h"
 #include "DxLib.h"
 #include "game.h"
-#include "EasyQuiz2.h"
+#include "EasyQuiz3.h"
 
-EasyQuiz1IncorrectAnswer::EasyQuiz1IncorrectAnswer() :
+EasyQuiz2IncorrectAnswer::EasyQuiz2IncorrectAnswer() :
 	m_crossHandle(-1),
+	m_letterHandle(-1),
 	m_waitFrame(0),
-	m_bugPreven(false),
-	m_letterHandle(-1)
+	m_bugPreven(false)
 {
 }
 
-EasyQuiz1IncorrectAnswer::~EasyQuiz1IncorrectAnswer()
+EasyQuiz2IncorrectAnswer::~EasyQuiz2IncorrectAnswer()
 {
 }
 
-void EasyQuiz1IncorrectAnswer::init()
+void EasyQuiz2IncorrectAnswer::init()
 {
 	m_crossHandle = CreateFontToHandle(NULL, 100, 5);
 	m_letterHandle = CreateFontToHandle(NULL, 20, 5);
@@ -23,12 +23,12 @@ void EasyQuiz1IncorrectAnswer::init()
 	m_bugPreven = false;
 }
 
-void EasyQuiz1IncorrectAnswer::end()
+void EasyQuiz2IncorrectAnswer::end()
 {
 
 }
 
-SceneBase* EasyQuiz1IncorrectAnswer::update()
+SceneBase* EasyQuiz2IncorrectAnswer::update()
 {
 	//Ç∑ÇÆÇ…ÉVÅ[ÉìÇ™êÿÇËë÷ÇÌÇÈÇÃÇñhÇÆèàóù
 	if (!m_bugPreven)
@@ -43,13 +43,13 @@ SceneBase* EasyQuiz1IncorrectAnswer::update()
 	int padState = GetJoypadInputState(DX_INPUT_KEY_PAD1);
 	if (padState & PAD_INPUT_1 && m_bugPreven || CheckHitKey(KEY_INPUT_SPACE) && m_bugPreven)
 	{
-		return (new EasyQuiz2);
+		return (new EasyQuiz3);
 	}
 
 	return this;
 }
 
-void EasyQuiz1IncorrectAnswer::draw()
+void EasyQuiz2IncorrectAnswer::draw()
 {
 	//Å~ÇÃï\é¶
 	DrawStringToHandle(Game::kScreenWidth / 2 - 55, Game::kScreenHeight / 2 - 100, "Å~", GetColor(30, 144, 255), m_crossHandle);

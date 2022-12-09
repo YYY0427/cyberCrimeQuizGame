@@ -16,10 +16,14 @@ public:
 	virtual void draw() override;
 
 private:
+		
+	int		m_nowSelect;			//どの項目を選択しているか
 
-	int		m_nowSelect;		//どの項目を選択しているか
+	int		m_selectInterval;		//コントローラーの操作のインターバル
 
-	int		m_selectInterval;	//コントローラーの操作のインターバル
+	int		m_selectPosY;			//■の表示位置
 
-	int		m_selectPosY;		//■の表示位置
+	int		m_titleLetterHandle;	//タイトルの表示用ハンドル
+
+	int		m_explanLetterHandle;	//説明の表示用ハンドル
 };

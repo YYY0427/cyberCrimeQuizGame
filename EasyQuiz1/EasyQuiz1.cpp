@@ -3,6 +3,7 @@
 #include "game.h"
 #include "EasyQuiz1CorrectAnswer.h"
 #include "EasyQuiz1IncorrectAnswer.h"
+#include "EasyQuizSceneMain.h"
 
 namespace
 {
@@ -220,7 +221,7 @@ SceneBase* EasyQuiz1::update()
 			//インターバルを初期化
 			m_selectInterval = kSelectInterval;
 		}
-		if (padState & PAD_INPUT_1)
+		if (padState & PAD_INPUT_1 || CheckHitKey(KEY_INPUT_SPACE))
 		{
 			switch (m_nowSelect)
 			{

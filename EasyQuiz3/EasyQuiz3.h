@@ -1,14 +1,11 @@
 #pragma once
-
 #include "SceneBase.h"
-#include "EasyQuiz1.h"
-#include "EasyQuizSceneMain.h"
 
-class EasyQuiz1 : public SceneBase
+class EasyQuiz3 : public SceneBase
 {
 public:
-	EasyQuiz1();
-	virtual ~EasyQuiz1();
+	EasyQuiz3();
+	virtual ~EasyQuiz3();
 
 	virtual void init() override;
 
@@ -18,10 +15,7 @@ public:
 
 	virtual void draw() override;
 
-
 private:
-	EasyQuizSceneMain* m_pEasyQuiz1;
-
 	int		m_choiceHandle;				//選択肢表示用のフォント
 
 	int		m_problemNumHandle;			//第何問かの表示用のフォント
